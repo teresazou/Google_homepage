@@ -104,10 +104,25 @@ input{
     flex-direction: row;
     cursor:pointer;
 }
+
 .voicesearch{
 width:25px;
 align-items: center;
 background:transparent;
+}
+.voicesearchbox .tooltiptext{
+    background-color:black;
+    color:white;
+    visibility:hidden;
+    width:110px;
+    text-align: center;
+    position: fixed;
+    margin: 40px 100px -100px -38px;
+    padding:5px;
+    font-size:small;
+}
+.voicesearchbox:hover .tooltiptext {
+  visibility: visible;
 
 }
 </style>
@@ -145,6 +160,7 @@ background:transparent;
         <path fill="rgb(234, 67, 53)"d="m 12 16.93 a 4.97 5.25 0 0 1 -3.54 -1.55 l -1.41 1.49 c 1.26 1.34 3.02 2.13 4.95 2.13 c 3.87 0 6.99 -2.92 6.99 -7 h -1.99 c 0 2.92 -2.24 4.93 -5 4.93 Z">
         </path>
     </svg>   
+    <span class="tooltiptext">Search By Voice</span>
  </div>
     <input class="no-outline" type="text"  name="Search">  
 </form>
